@@ -1,15 +1,22 @@
 name: toyyibpay
-description: "toyyibpay"
-version: 1.1.1
-homepage: https://goutam.info
+description: >
+  Flutter helper to create ToyyibPay bills, open a WebView checkout, parse the return URL,
+  and optionally verify the transaction via ToyyibPay APIs for simple in-app payments.
+version: 1.1.2
 
-
-
-
+# Optional metadata; add real URLs when ready
+# homepage: https://example.com/toyyibpay
+repository: https://github.com/your-org/toyyibpay
+issue_tracker: https://github.com/your-org/toyyibpay/issues
+topics:
+  - payments
+  - checkout
+  - toyyibpay
+  - malaysia
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
@@ -20,9 +27,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
-
-
-
+# If you add assets later, declare them here.
