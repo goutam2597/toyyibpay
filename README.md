@@ -47,7 +47,7 @@ In `pubspec.yaml`:
 ```yaml
 dependencies:
   # Replace with your actual package name if different
-  toyyibpay_checkout: ^0.1.0
+  toyyibpay: ^1.0.0
 ```
 
 Then:
