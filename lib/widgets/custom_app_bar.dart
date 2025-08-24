@@ -31,7 +31,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
       child: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        elevation: 0,
+        elevation: 1,
         forceMaterialTransparency: true,
         foregroundColor: Colors.transparent,
         title: Stack(
