@@ -1,6 +1,6 @@
 class ToyyibpayPaymentResult {
   final String billCode;
-  final String status; // 'success', 'failed', 'pending', etc.
+  final String status; // 'success', 'pending', 'failed'
   final Map<String, dynamic> raw;
 
   const ToyyibpayPaymentResult({
