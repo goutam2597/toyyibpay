@@ -2,7 +2,7 @@ name: toyyibpay
 description: >
   Flutter helper to create ToyyibPay bills, open a WebView checkout, parse the return URL,
   and optionally verify the transaction via ToyyibPay APIs for simple in-app payments.
-version: 2.0.0
+version: 2.1.0
 
 # Optional metadata; add real URLs when ready
 # homepage: https://example.com/toyyibpay

@@ -1,3 +1,14 @@
+## 2.1.0 - 2025-08-24
+
+- Improved package metadata to follow pub.dev conventions:
+    - Added detailed description (50–180 chars).
+    - Updated SDK and Flutter constraints.
+    - Added `repository` links.
+    - Removed unreachable homepage.
+- Added working `example/` app for pub.dev Example tab.
+- Improved documentation (`README.md`) with usage guide, parameters, troubleshooting, and best practices.
+
+
 ## 2.0.0 - 2025-08-24
 
 - Improved package metadata to follow pub.dev conventions:
