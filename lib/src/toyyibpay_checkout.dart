@@ -13,18 +13,17 @@ class ToyyibpayCheckout {
   /// [amountCents] must be provided in *sen/cents* (e.g. 1000 = RM10.00).
   static Future<ToyyibpayPaymentResult> startPayment({
     required BuildContext context,
-    required String apiKey, // sandbox or live secret key
-    required String categoryCode, // from ToyyibPay dashboard
+    required String apiKey,
+    required String categoryCode,
     required String billName,
     required String billDescription,
-    required String amountCents, // string int: e.g. '1000'
+    required String amountCents,
     required String returnDeepLink,
     String payerName = 'Demo User',
     String payerEmail = 'customer@test.com',
     String payerPhone = '0123456789',
-    String baseUrl =
-        'https://dev.toyyibpay.com', // switch to https://toyyibpay.com for live
-    bool verifyWithApi = true, // also call getBillTransactions after redirect
+    String baseUrl = 'https://dev.toyyibpay.com',
+    bool verifyWithApi = true,
     String? appBarTitle,
   }) async {
     // 1) Create bill

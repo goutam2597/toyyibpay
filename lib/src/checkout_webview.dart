@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toyyibpay/widgets/custom_app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 /// Generic checkout WebView that notifies caller when navigation
@@ -8,14 +9,14 @@ class CheckoutWebView extends StatefulWidget {
   final String checkoutUrl;
   final String returnDeepLink;
   final ValueChanged<Uri> onReturn;
-  final String? appBarTitle;
+  final String appBarTitle;
 
   const CheckoutWebView({
     super.key,
     required this.checkoutUrl,
     required this.returnDeepLink,
     required this.onReturn,
-    this.appBarTitle,
+    this.appBarTitle = 'ToyyibPay',
   });
 
   @override
@@ -52,15 +53,21 @@ class _CheckoutWebViewState extends State<CheckoutWebView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.appBarTitle ?? 'ToyyibPay Checkout')),
-      body: Stack(
+      body: Column(
         children: [
-          WebViewWidget(controller: _controller),
-          if (_loading)
-            const Align(
-              alignment: Alignment.topCenter,
-              child: LinearProgressIndicator(minHeight: 2),
+          CustomAppBar(title: widget.appBarTitle),
+          Expanded(
+            child: Stack(
+              children: [
+                WebViewWidget(controller: _controller),
+                if (_loading)
+                  const Align(
+                    alignment: Alignment.topCenter,
+                    child: LinearProgressIndicator(minHeight: 2),
+                  ),
+              ],
             ),
+          ),
         ],
       ),
     );
