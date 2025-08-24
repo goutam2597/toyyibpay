@@ -85,7 +85,7 @@ class ToyyibpayCheckout {
                 interimStatus = 'pending';
               }
             },
-            appBarTitle: appBarTitle ?? 'ToyyibPay Checkout',
+            appBarTitle: appBarTitle ?? 'ToyyibPay',
           ),
         ),
       );
