@@ -8,9 +8,9 @@ class ExampleApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'ToyyibPay Example',
-      home: const CheckoutDemo(),
+      home: CheckoutDemo(),
     );
   }
 }
@@ -34,7 +34,9 @@ class CheckoutDemo extends StatelessWidget {
 
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Payment status: ${result.status} (bill: ${result.billCode})')),
+        SnackBar(
+            content: Text(
+                'Payment status: ${result.status} (bill: ${result.billCode})')),
       );
     }
   }
